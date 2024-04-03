@@ -1,9 +1,8 @@
 // POP UP PROMPT ONLOAD
+var text;
+var person = prompt("Please enter your name:", "");
 
 function myPrompt(){
-    let text;
-    let person = prompt("Please enter your name:", "User");
-
     if (person == null || person == "") {
         text = "Invalid.";
     }
@@ -14,7 +13,11 @@ function myPrompt(){
     document.getElementById("showText").innerHTML = text;
 }
 
-//MAIN FUNCTION
+//TEST FUNCTION
+function nameshow(){
+    document.getElementById("showText").innerHTML = "Your name is " + person + ".";
+}
+//PREVIOUS FUNCTIONS
 
 function Animal(name, breed){
     this.name = name;
